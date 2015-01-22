@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "JBAudioPlayerView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet JBAudioPlayerView *autoLayoutAudioPlayerView;
+@property (weak, nonatomic) IBOutlet JBAudioPlayerView *noAutoLayoutAudioPlayerView;
 
 @end
 
@@ -17,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.noAutoLayoutAudioPlayerView.useAutoLayout = NO;
 }
 
 - (void)didReceiveMemoryWarning {

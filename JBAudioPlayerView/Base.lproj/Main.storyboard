@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,60 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZY-s8-RwH" userLabel="Audio Player View - Auto Layout" customClass="JBAudioPlayerView">
+                                <rect key="frame" x="147" y="74" width="306" height="50"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.64705882349999999" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="IkY-oq-203"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wlt-rA-hTL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbJ-jc-S03" userLabel="Audio Player View - Without Auto Layout" customClass="JBAudioPlayerView">
+                                <rect key="frame" x="147" y="213" width="306" height="50"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.64705882349999999" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="gnK-MM-MX2"/>
+                                    <constraint firstAttribute="height" constant="50" id="sVx-pm-lyh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using auto layout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryO-Ls-KkF">
+                                <rect key="frame" x="233" y="45" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FTL-0h-YYM"/>
+                                    <constraint firstAttribute="width" constant="135" id="oBN-sT-n5O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Without auto layout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE9-1i-J6a">
+                                <rect key="frame" x="225" y="184" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Afn-vG-Jb7"/>
+                                    <constraint firstAttribute="height" constant="21" id="jZu-SJ-6AX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ZY-s8-RwH" firstAttribute="top" secondItem="ryO-Ls-KkF" secondAttribute="bottom" constant="8" id="5SN-50-Gxo"/>
+                            <constraint firstAttribute="centerX" secondItem="yE9-1i-J6a" secondAttribute="centerX" id="IcO-WC-8dI"/>
+                            <constraint firstAttribute="centerX" secondItem="ZbJ-jc-S03" secondAttribute="centerX" id="Khi-bL-U83"/>
+                            <constraint firstAttribute="centerX" secondItem="ryO-Ls-KkF" secondAttribute="centerX" id="R8P-kl-TvQ"/>
+                            <constraint firstItem="ZbJ-jc-S03" firstAttribute="top" secondItem="yE9-1i-J6a" secondAttribute="bottom" constant="8" id="bf4-RY-N2M"/>
+                            <constraint firstItem="ryO-Ls-KkF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="dE6-be-FWk"/>
+                            <constraint firstItem="yE9-1i-J6a" firstAttribute="top" secondItem="9ZY-s8-RwH" secondAttribute="bottom" constant="60" id="fsU-6D-etE"/>
+                            <constraint firstAttribute="centerX" secondItem="9ZY-s8-RwH" secondAttribute="centerX" id="y7G-I2-x68"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="autoLayoutAudioPlayerView" destination="9ZY-s8-RwH" id="WfP-Ff-tjR"/>
+                        <outlet property="noAutoLayoutAudioPlayerView" destination="ZbJ-jc-S03" id="vFM-Wu-Eek"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
