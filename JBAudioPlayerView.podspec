@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url	= "http://twitter.com/josipbernat"
   s.platform     		= :ios, "7.0"
   s.source       	= { :git => "https://github.com/josipbernat/JBAudioPlayerView.git", :tag => "v1.0.0" }
-  s.source_files  	= 'JBAudioPlayerView/JBAudioPlayerView/**/*.{h,m}'
+  s.source_files  	= 'JBAudioPlayerView/JBAudioPlayerView/**/*.{h,m,png}'
   s.requires_arc 	= true 
   s.dependency 		"PureLayout"
 end
