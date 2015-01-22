@@ -1,7 +1,7 @@
 # JBAudioPlayerView
 Simple view component for playing audio files in iOS. Suitable for usage in UITableView and UICollectionView.
 
-![alt tag](https://cloud.githubusercontent.com/assets/2537227/5857202/130b2026-a24a-11e4-93cf-43390f24fb4a.png)
+![alt tag](https://cloud.githubusercontent.com/assets/2537227/5857444/204ac438-a24c-11e4-95e7-75aa4981d351.png)
 
 ## USAGE
 You can use it from Storyboards, XIBs or directly from code. It uses AutoLayou by default but if you wish to turn it off just set useAutoLayout to NO.

@@ -25,6 +25,8 @@
     
     self.noAutoLayoutAudioPlayerView.useAutoLayout = NO;
     
+    self.autoLayoutAudioPlayerView.timeLabel.text = @"00:04";
+    
     JBAudioPlayerView *fromCode = [[JBAudioPlayerView alloc] initWithFrame:CGRectMake(CGRectGetMinX(self.noAutoLayoutAudioPlayerView.frame),
                                                                                       CGRectGetMaxY(self.noAutoLayoutAudioPlayerView.frame) + 30.0f,
                                                                                       CGRectGetWidth(self.noAutoLayoutAudioPlayerView.frame),
