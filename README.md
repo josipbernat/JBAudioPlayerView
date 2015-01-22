@@ -6,7 +6,6 @@ Simple view component for playing audio files in iOS. Suitable for usage in UITa
 ## USAGE
 You can use it from Storyboards, XIBs or directly from code. It uses AutoLayou by default but if you wish to turn it off just set useAutoLayout to NO.
 
-### `GET` Request
 ```objective-c
 JBAudioPlayerView *fromCode = [[JBAudioPlayerView alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 200.0f, 50.0f)];
 fromCode.backgroundColor = [UIColor yellowColor];
