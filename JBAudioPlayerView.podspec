@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.author             	= { "Josip Bernat" => "josip.bernat@gmail.com" }
   s.social_media_url	= "http://twitter.com/josipbernat"
   s.platform     		= :ios, "7.0"
-  s.source       	= { :git => "https://github.com/josipbernat/JBAudioPlayerView.git", :tag => "v1.0.1 }
-  s.source_files  	= 'JBAudioPlayerView/JBAudioPlayerView/**/*.{h,m,png}'
+  s.source       	= { :git => "https://github.com/josipbernat/JBAudioPlayerView.git", :tag => "v1.0.1" }
+  s.source_files  	= 'JBAudioPlayerView/JBAudioPlayerView/**/*.{h,m}'
   s.resource_bundles = {'Assets' => ['JBAudioPlayerView/JBAudioPlayerView/Assets/*']}
   s.requires_arc 	= true 
   s.dependency 		"PureLayout"
