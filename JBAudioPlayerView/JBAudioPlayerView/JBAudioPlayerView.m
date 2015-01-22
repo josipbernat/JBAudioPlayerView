@@ -59,8 +59,8 @@
     self.useAutoLayout = YES;
     
     //Control button
-    self.playButtonImage = [UIImage imageNamed:@"play_button"];
-    self.pauseButtonImage = [UIImage imageNamed:@"pause_button"];
+    self.playButtonImage = [UIImage imageNamed:@"demo_play_button"];
+    self.pauseButtonImage = [UIImage imageNamed:@"demo_pause_button"];
     self.controlButtonInsets = UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f);
     
     self->_controlButton = [UIButton buttonWithType:UIButtonTypeCustom];
